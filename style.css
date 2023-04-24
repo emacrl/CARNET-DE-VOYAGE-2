@@ -1,0 +1,59 @@
+body {
+    font-family: 'Poller One';
+}
+
+.title {
+    text-align:center ;
+
+}
+
+main{
+    width: 80%;
+    margin : auto;
+}
+
+.diapo {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#nav-droite, #nav-gauche {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 3em;
+}
+
+#nav-droite {
+    right: 20px;
+}
+
+#nav-gauche{
+    left:20px;
+}
+
+.photos{
+display: flex;
+transition: 1s linear;
+}
+
+.photo{
+    flex:1 0 100%;
+    position:relative;
+}
+
+.photo > img{
+    width:100%;
+}
+
+.legende{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    background-color: white;
+    padding:30px;
+}
